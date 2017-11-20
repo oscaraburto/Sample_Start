@@ -1,0 +1,41 @@
+body {
+    width: 1200px;
+    height: 800px;
+    text-align: center;
+    color: black;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    width: 500px;
+    height: 500px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+}
+
+#CreateCandidateButton {
+    font-size: 18px;
+    padding: 20px;
+}
+
+#LeftColumn {
+    float: left;
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    font-size: 30px;
+}
+
+#RightColumn {
+    float: right;
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    font-size: 30px;
+}
+
