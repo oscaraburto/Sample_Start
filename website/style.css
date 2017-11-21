@@ -1,41 +1,45 @@
-body {
-    width: 1200px;
-    height: 800px;
-    text-align: center;
-    color: black;
-    background-color: orange;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p {
-    width: 500px;
-    height: 500px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: left;
+#main-header {
+    background-color: #555555;
+    color: white;
+    height: 35px;
     padding: 10px;
 }
 
-#CreateCandidateButton {
-    font-size: 18px;
-    padding: 20px;
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 5px;
+    height: auto;
+    width: auto;
 }
 
-#LeftColumn {
+#box-1 {
     float: left;
-    width: 600px;
-    height: 600px;
-    background-color: blue;
-    font-size: 30px;
+    width: 45%;
+    text-align: center;
+    color: black;
 }
 
-#RightColumn {
+#box-2 {
     float: right;
-    width: 600px;
-    height: 600px;
-    background-color: red;
-    font-size: 30px;
+    width: 45%;
+    text-align: center;
+    color: black;
 }
 
+.button {
+    background-color: #101c88;
+    border-color: #555555;
+    color: white;
+    margin: 10px;
+    width: 115px;
+    padding: 5px;
+}
+
+.table {
+    float: left;
+    border: 0.5px solid black;
+}
