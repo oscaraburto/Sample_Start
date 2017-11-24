@@ -14,26 +14,20 @@
     <div class="container">
         <div id="box-1">
             <h1>Candidate List</h1>
-            <p id="box-1-p">
-                <script src="script-00.js"></script>
-            </p>
+            <script src="script-00.js"></script>
         </div>
 
         <div id="box-2">
             <h1>Create A Candidate</h1>
             <p id="box-2-p">
-                <form action="process-data.php" method="POST">
-                    <div id="input-name">
-                        <label></label>
-                        <input type="text" name="name" placeholder="Name">
-                    </div>
-
-                    <input class="button" type="submit" value="Submit" name="">
-                </form>
-                <script src="script-01.js"></script>
+                <div id="input-name">
+                    <input type="text" placeholder="Name" id="userName">
+                    <button id="button" onclick="addPer(); funConst()">Submit</button>
+                </div>
             </p>
         </div>
     </div>
+
 </body>
 
 </html>
