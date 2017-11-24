@@ -6,15 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="description" content="Homework Assignment #6 done by Oscar Aburto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
-    <header id="main-header">Homework #6</header>
+    <header id="main-header">Oscar Aburto's Homework #6</header>
     <div class="container">
+
         <div id="box-1">
             <h1>Candidate List</h1>
-            <script src="script-00.js"></script>
         </div>
 
         <div id="box-2">
@@ -22,12 +22,16 @@
             <p id="box-2-p">
                 <div id="input-name">
                     <input type="text" placeholder="Name" id="userName">
-                    <button id="button" onclick="addPer(); funConst()">Submit</button>
+                    <br/>
+                    <button id="button" onclick="addPer()">Submit</button>
                 </div>
             </p>
         </div>
     </div>
-
+    <script src="script-00.js"></script>
+    <script>
+        $('#box-1').append("</tbody></table>");
+    </script>
 </body>
 
 </html>

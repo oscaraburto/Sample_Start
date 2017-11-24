@@ -1,20 +1,25 @@
-// Global Variables
+
+// Global Variables.
 const candidates = [
     { fname: 'Peter Parker', nlikes: 700 },
     { fname: 'Tony Stark', nlikes: 135 },
     { fname: 'dash', nlikes: 0 },
 ]
 
+// Counter variable for additional submitted names.
+var i = 3;
+
+
 // Functions
 function funConst() {
-    document.write("<table class='table'><thead><tr><th>Full Name | </th><th># of Likes | </th><th> Like |</th><th> Delete |</th></tr></thead><tbody>");
+    $('#box-1').append("<table class='table'><thead><tr><th>Full Name | </th><th># of Likes | </th><th> Like |</th><th> Delete |</th></tr></thead><tbody>");
     for (var i = 0; i < candidates.length; i++) {
-        document.write("<tr id='perRow" + i + "'><td>" + candidates[i].fname + "</td><td id='c" + i + "'>"
+        $('.table').append("<tr id='perRow" + i + "'><td>" + candidates[i].fname + "</td><td id='c" + i + "'>"
             + candidates[i].nlikes + "</td>"
             + '<td><button type="button" onclick="addLike(' + i + ')"><i class="glyphicon glyphicon-thumbs-up" style="font-size: 22px; color: rgb(30, 143, 1)"></i></button></td>'
             + '<td><button type="button" onclick="delRow(' + i + ')"><i class="glyphicon glyphicon-remove" style="font-size: 22px; color: red;"></i></button></td></tr>');
     }
-    document.write("</tbody></table>");
+
 }
 
 function addLike(arg1) {
@@ -31,11 +36,20 @@ function delRow(arg1) {
 function addPer() {
     var userName = document.getElementById("userName").value;
     candidates.push({ fname: userName, nlikes: 0 });
-    document.getElementById("box-1");
+
+    while (i < candidates.length) {
+        $('.table').append("<tr id='perRow" + i + "'><td>" + candidates[i].fname + "</td><td id='c" + i + "'>"
+            + candidates[i].nlikes + "</td>"
+            + '<td><button type="button" onclick="addLike(' + i + ')"><i class="glyphicon glyphicon-thumbs-up" style="font-size: 22px; color: rgb(30, 143, 1)"></i></button></td>'
+            + '<td><button type="button" onclick="delRow(' + i + ')"><i class="glyphicon glyphicon-remove" style="font-size: 22px; color: red;"></i></button></td></tr>')
+        i++;
+    }
 }
 
 // Start
-funConst();
+$(document).ready($('#box-1').ready(funConst()));
+
+
 
 
 
